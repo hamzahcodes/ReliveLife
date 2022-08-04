@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles"; // named import not default
 
-export const useStyles = makeStyles({
+export const useStyles = makeStyles((theme) => ({
   appBar: {
       borderRadius: 15,
       margin: '30px 0',
@@ -15,5 +15,10 @@ export const useStyles = makeStyles({
     image: {
       marginLeft: '15px',
     },
-})
+    [theme.breakpoints.down('md')]: {
+      mainContainer: {
+        flexDirection: 'column-reverse'
+      }
+    }
+}))
 
