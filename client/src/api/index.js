@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // url for backend
-const url = "https://relive-life.herokuapp.com/posts";
+const url = "http://localhost:5000/posts";
 
 export const fetchPosts = () => axios.get(url);
 

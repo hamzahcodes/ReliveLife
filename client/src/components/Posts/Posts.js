@@ -9,7 +9,7 @@ const Posts = ({setCurrentId}) => {
     const classes = useStyles();
 
     console.log(posts);
-    console.log(posts.length)
+    console.log(posts.length);
     return (
         <>
             {!posts.length
