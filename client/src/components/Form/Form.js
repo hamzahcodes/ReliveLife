@@ -26,6 +26,11 @@ const Form = ({setCurrentId, currentId}) => {
         // console.log(postdata);
 
         e.preventDefault();
+        
+        if(!postdata.creator || !postdata.message || !postdata.selectedFile || !postdata.tags || !postdata.title) {
+            alert("All fields are required!!");
+            return;
+        }
         if(currentId) {
             dispatch(updatePost(currentId, postdata));
         } else {
