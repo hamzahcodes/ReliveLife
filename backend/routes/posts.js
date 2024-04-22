@@ -13,3 +13,6 @@ router.delete('/:id', deletePost);
 router.patch('/:id/likePost', likePost)
 
 export default router;
+
+// CONNECTION_URL=mongodb+srv://hamzah:65290866@cluster0.t9ild.mongodb.net/?retryWrites=true&w=majority
+// PORT=5000
