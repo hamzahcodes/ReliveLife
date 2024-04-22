@@ -6,7 +6,7 @@ import mongoose from "mongoose";
 import postRoutes from "./routes/posts.js";
 import dotenv from 'dotenv';
 const app = express();
-dotenv.config();
+dotenv.config({ path: `.env.local`, override: true });
 
 // app.use() defines middleware and has to be taken care of in the order in which they appear
 // body parser to parse the data sent via post request
