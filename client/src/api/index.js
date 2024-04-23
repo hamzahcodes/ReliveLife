@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // url for backend
-const url = "http://localhost:5000/posts";
+const url = "https://relive-life-backend.vercel.app/posts";
 
 export const fetchPosts = () => axios.get(url);
 
