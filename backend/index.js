@@ -36,7 +36,7 @@ const PORT = process.env.PORT;
 //mongoose used to connect server to database
 // useNewUrlParser is used to avoid deprecation warning
 mongoose
-  .connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true, family: 4 })
   .then(() =>
     app.listen(PORT, () => console.log("Server running on port:", PORT))
   )
